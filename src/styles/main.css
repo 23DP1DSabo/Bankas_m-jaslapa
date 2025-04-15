@@ -196,6 +196,7 @@ button:active {
         justify-content: center;
         align-items: center;
         position: fixed;
+        min-height: 100px;
     }
   
     #logo {
@@ -206,8 +207,6 @@ button:active {
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
-      max-width: 100px;
-  
     }
   
     .menu-toggle {
@@ -215,8 +214,8 @@ button:active {
         text-align: center;
         justify-content: center;
         display: block;
-        max-width: 10vw;
-        max-height: 10vw;
+        max-width: 50px;
+        max-height: 80px;
         order: 1;
         margin-right: auto;
     }
@@ -247,7 +246,7 @@ button:active {
       }
   
     #hero-section {
-        padding-top: 60px;
+        padding-top: 100px;
         flex-direction: column;
         text-align: center;
     }
