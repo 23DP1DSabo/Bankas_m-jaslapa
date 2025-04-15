@@ -12,12 +12,21 @@
 <body>
     <header>
     <img id="logo" src="src/images/logo.png">
-    <nav>
+    <button id="menuToggle" class="menu-toggle">☰</button>
+    <nav class="nav-bar">
         <a href="#hero-section">Sākums</a>
         <a href="#info-section">Informācija</a>
         <a href="#download-section">Lejupielāde</a>
         <a href="#guide-section">Ceļvedis</a>
     </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#hero-section">Sākums</a>
+        <a href="#info-section">Informācija</a>
+        <a href="#download-section">Lejupielāde</a>
+        <a href="#guide-section">Ceļvedis</a>
+    </div>
+    <div id="overlay"></div>
+
 </header>
 <main>
     <section id="hero-section">
@@ -53,7 +62,7 @@
     </footer>
 </div>
 
-<script src="src/main.js"></script>
+<script src="src/scripts/main.js"></script>
 
 </body>
 </html>
