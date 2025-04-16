@@ -129,6 +129,10 @@ a:active {
     color: #fff;
 } 
 
+#hero-text {
+    margin-left: 5vw;
+}
+
 #hero-section h1 {
     font-size: 60px;
     margin-bottom: -15px;
