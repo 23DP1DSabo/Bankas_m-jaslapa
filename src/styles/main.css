@@ -26,6 +26,7 @@ header {
     align-items: center;
     padding: 10px;
     background-color: #001170;
+    z-index: 900;
   }
 
 #logo {
@@ -51,9 +52,19 @@ header {
 }
 
 @media (max-width: 800px) {
+
     .nav-bar {
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    }
+    };
+
+    .regular-section p, li {
+        font-size: 12px;
+    };
+
+    .regular-section h1 {
+        padding-top: 70px;
+        margin-top: -70px;
+    };
 }
 
 hr {
@@ -144,7 +155,15 @@ a:active {
 
 #hero-scales {
     margin-left: auto;
+    margin-right: 100px;
     max-width: 550px;
+}
+
+@media (max-width: 1300px) {
+    #hero-scales {
+        margin-right: 20px;
+        margin-left: auto;
+    };
 }
 
 .regular-section {
@@ -226,7 +245,6 @@ button:active {
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
-    margin-bottom: 50px;
     max-width: 300px;
     min-width: 150px;
 }
@@ -249,7 +267,12 @@ button:active {
     pointer-events: auto;
 }
 
+@media (max-width: 700px) {
 
+    .regular-section p, li {
+        font-size: 15px !important
+    }
+}
 
 
 
@@ -328,6 +351,11 @@ button:active {
     #hero-scales {
         max-width: 90%;
         margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #hero-text {
+        margin-left: 0px;
     }
 
     h1 {
@@ -367,3 +395,4 @@ button:active {
     }
 
   }
+

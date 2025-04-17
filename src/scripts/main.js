@@ -20,3 +20,22 @@ links.forEach(link => {
   });
 });
 
+
+
+document.addEventListener('DOMContenrLoaded', function () { 
+  function updateScrollMargin() {
+  const header = document.getElementById('header');
+  const headerHeight = header.offsetHeight;
+  const sections = document.querySelectorAll('.regular-section');
+
+  sections.forEach(section => {
+    section.computedStyleMap.scrollMarginTop = '${headerHeight}px';
+  });
+}
+
+updateScrollMargin();
+
+window.addEventListener('resize', updateScrollMargin);
+});
+
+section.style.setProperty('scroll-margin-top', '${headerHeight}px', 'important');
