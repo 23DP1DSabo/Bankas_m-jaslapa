@@ -23,27 +23,35 @@ links.forEach(link => {
 
 
 
-document.addEventListener('DOMContenrLoaded', function () { 
+document.addEventListener('DOMContentLoaded', function () { 
   function updateScrollMargin() {
-  const header = document.getElementById('header');
-  const headerHeight = header.offsetHeight;
-  const sections = document.querySelectorAll('.regular-section');
+    const header = document.getElementById('header');
+    
+    if (!header) {
+      console.error("Header not found!");
+      return;
+    }
 
-  sections.forEach(section => {
-    section.computedStyleMap.scrollMarginTop = '${headerHeight}px';
-  });
-}
+    const headerHeight = header.offsetHeight;
+    const sections = document.querySelectorAll('.regular-section');
 
-updateScrollMargin();
+    sections.forEach(section => {
+      section.style.setProperty('scroll-margin-top', `${headerHeight}px`, 'important');
+    });
+  }
 
-window.addEventListener('resize', updateScrollMargin);
-});
-
-section.style.setProperty('scroll-margin-top', '${headerHeight}px', 'important');
-
-const header = document.getElementById('.header');
-const resizeObserver = new ResizeObserver(() => {
   updateScrollMargin();
+
+  window.addEventListener('resize', updateScrollMargin);
+
+  const header = document.getElementById('header');
+  if (header) {
+    const resizeObserver = new ResizeObserver(() => {
+      updateScrollMargin();
+    });
+    resizeObserver.observe(header);
+  } else {
+    console.error("Header element not found during ResizeObserver setup");
+  }
 });
 
-resizeObserver.observe(header);
