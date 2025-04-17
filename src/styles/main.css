@@ -84,12 +84,12 @@ h1 {
 .regular-section p {
     font-size: 25px;
     margin: 0;
-    padding: 5px;
+    padding: 5px 5px 5px 15px;
 }
 
 .regular-section ul {
     list-style-type: none;
-    padding: 5px 5px 40px 5px;
+    padding: 5px 5px 40px 30px;
     margin: 0;
 }
 
