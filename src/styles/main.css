@@ -27,7 +27,7 @@ header {
     padding: 10px;
     background-color: #001170;
     z-index: 900;
-    font-size: 25px;
+    font-size: 20px;
   }
 
 #logo {
@@ -66,6 +66,10 @@ header {
         padding-top: 70px;
         margin-top: -70px;
     };
+
+    #scam p {
+        font-size: 50px;
+    }
 }
 
 hr {
@@ -187,7 +191,7 @@ a:active {
         to bottom,
         white 0px,
         white 23.5px,
-        lightblue 25px
+        rgb(126, 126, 255) 25px
     );
     line-height: 25px;
     background-position: left top;
@@ -249,6 +253,10 @@ button:active {
     max-width: 300px;
     min-width: 150px;
     margin-bottom: 10px;
+}
+
+#scam p {
+    margin-top:5px;
 }
 
 #overlay {
