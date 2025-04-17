@@ -27,6 +27,7 @@ header {
     padding: 10px;
     background-color: #001170;
     z-index: 900;
+    font-size: 25px;
   }
 
 #logo {
@@ -247,6 +248,7 @@ button:active {
     margin-top: 50px;
     max-width: 300px;
     min-width: 150px;
+    margin-bottom: 10px;
 }
 
 #overlay {
@@ -394,5 +396,6 @@ button:active {
         position: relative;
     }
 
-  }
 
+
+  }

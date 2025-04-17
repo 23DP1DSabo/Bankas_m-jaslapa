@@ -22,6 +22,7 @@ links.forEach(link => {
 
 
 
+
 document.addEventListener('DOMContenrLoaded', function () { 
   function updateScrollMargin() {
   const header = document.getElementById('header');
@@ -39,3 +40,10 @@ window.addEventListener('resize', updateScrollMargin);
 });
 
 section.style.setProperty('scroll-margin-top', '${headerHeight}px', 'important');
+
+const header = document.getElementById('.header');
+const resizeObserver = new ResizeObserver(() => {
+  updateScrollMargin();
+});
+
+resizeObserver.observe(header);
