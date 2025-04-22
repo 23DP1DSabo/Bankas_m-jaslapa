@@ -56,6 +56,12 @@ header {
 
     .nav-bar {
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+
+    #logo {
+        max-height: 15vh;
+        height: auto;
+        margin-left: 10px;
     };
 
     .regular-section p, li {
@@ -172,7 +178,8 @@ a:active {
 }
 
 .regular-section {
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     width: 90vw;
     padding: 20px 20px 20px 40px;
     margin-left: auto;
@@ -196,6 +203,12 @@ a:active {
     line-height: 25px;
     background-position: left top;
     background-repeat: repeat-y;
+}
+
+.regular-section:not(:last-child) {
+    border-bottom: 4px dashed #000;
+    padding-bottom: 40px;
+    padding-top: 40px;
 }
 
 .regular-section h1 {
@@ -225,7 +238,7 @@ a:active {
     text-align: center;
 }
 
-button {
+#download-link {
     padding: 15px;
     width:100%;
     cursor: pointer;
@@ -236,7 +249,7 @@ button {
     border-radius: 10px;
 }
 
-button:active {
+#download-link:active {
     margin-top: 1px;
     margin-bottom: 1px;
     padding: 14px;
@@ -312,14 +325,22 @@ button:active {
     }
   
     .menu-toggle {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        display: block;
-        max-width: 50px;
-        max-height: 80px;
-        order: 1;
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 28px;
+        cursor: pointer;
+        padding: 6px 10px;
+        z-index: 1000;
         margin-right: auto;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    .menu-toggle:hover {
+        border: 1px solid white;
+        border-radius: 6px;
+        background-color: rgba(255, 255, 255, 0.1);
     }
   
     .nav-bar {
@@ -404,6 +425,9 @@ button:active {
         position: relative;
     }
 
+    #arrow {
+        font-size: 30px;
+    }
 
 
   }
