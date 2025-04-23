@@ -10,14 +10,20 @@
 
 
 <body>
+    
+<!--Header------------------------------->
     <header id="header">
     <img id="logo" src="src/images/logo.png">
     <button id="menuToggle" class="menu-toggle">☰</button>
+
+<!--Navigation Bar------------------------------->
     <nav class="nav-bar">
         <a href="#hero-section">Sākums</a>
         <a href="#info-section">Informācija</a>
         <a href="#download-section">Lejupielāde</a>
         <a href="#guide-section">Ceļvedis</a>
+
+<!--Theme Selector------------------------------->
         <div id="theme-selector">
             <button id="theme-drop-button">Izskati</button>
             <div id="themes">
@@ -28,6 +34,7 @@
         </div>
     </nav>
    
+<!--Mobile Menu------------------------------->
     <div class="mobile-menu" id="mobileMenu">
         <a href="#hero-section">Sākums</a>
         <a href="#info-section">Informācija</a>
@@ -37,7 +44,11 @@
     <div id="overlay"></div>
 
 </header>
+
+<!--Main Part------------------------------->
 <main>
+
+<!--Hero Section------------------------------->
     <section id="hero-section">
         <div id="hero-text">
             <h1>Bankas sistēma</h1>
@@ -46,6 +57,7 @@
         <img id="hero-scales" src="src/images/scales-removebg-preview.png" alt="Hero Image">
     </section>
 
+<!--Info Section------------------------------->
     <section class="regular-section" id="info-section">
         <h1>Par sistēmu</h1>
         <p>Šī bankas sistēmas programma ir izstrādāta Java valodā kā konsoles lietotne ar dažādu bibliotēku un frameworku palīdzību. Tās mērķis ir attēlot pamata bankas funkcionalitāti izglītojošiem nolūkiem. Tajā var sataisīt lietotāju, un lietotājs, savukārt, var izveidot kontu, pieslēgties esošam kontam, veikt iemaksas, izmaksas, pārskaitīt naudu, apskatīt konta atlikumu un citas darbības.</p>
@@ -60,8 +72,11 @@
 <p> Šī sistēma nav paredzēta izmantot reāliem finansu nolūkiem bet gan kā mācību projekts, lai iepazīstinātu ar bankas bāzu funkcionalitāti un nodemonstrētu objektorientētās programmēšanas pamatus, failu apstrādi un lietotāja interfeisa izveidi konsolē.</p>
     </section>
 
+<!--Download Section------------------------------->
     <section class="regular-section" id="download-section">
         <h1>Lejupielāde</h1>
+
+<!--Download Button------------------------------->
         <div id="scam">
             <a href="src/files/important.png" download id="download-link">
                 Download
@@ -77,12 +92,16 @@ Programma darbojas konsolē un neprasa instalēšanu.
 Pārliecinieties, ka jūsu datorā ir uzstādīta Java (versija 8 vai jaunāka).</p>
     </section>
 
+<!--Guide Section-------------------------------->
     <section class="regular-section" id="guide-section">
         <h1>Ceļvedis</h1>
-        <p>Atverot ielādēto programmu, uzreiz tiks redzama Sākuma izvēlne....</p>
+        <a href="src/files/important.png" download id="download-link">
+            Lietošanas ceļvedis
+        </a>
     </section>
 </main>
 
+<!--Footer Section------------------------------->
 <footer id="footer-section">
     <p>Copyright © 2025 DSabovics Npoznaks - All Rights Reserved.</p>
 </footer>

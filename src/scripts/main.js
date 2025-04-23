@@ -1,3 +1,5 @@
+// Mobile Menu doohickeys
+
 const toggleBtn = document.querySelector(".menu-toggle");
 const mobileMenu = document.getElementById("mobileMenu");
 const overlay = document.getElementById("overlay");
@@ -22,13 +24,14 @@ links.forEach(link => {
 
 
 
+// Section Scroll Margin fixes
 
 document.addEventListener('DOMContentLoaded', function () { 
   function updateScrollMargin() {
     const header = document.getElementById('header');
     
     if (!header) {
-      console.error("Header not found!");
+      console.error("Header not found bruh");
       return;
     }
 
@@ -51,13 +54,13 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     resizeObserver.observe(header);
   } else {
-    console.error("Header element not found during ResizeObserver setup");
+    console.error("Header element not found bruh");
   }
 });
 
 
 
-
+// Themes
 
 function midnight() {
   var element = document.body;
