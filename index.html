@@ -10,7 +10,7 @@
 
 
 <body>
-    
+
 <!--Header------------------------------->
     <header id="header">
     <img id="logo" src="src/images/logo.png">
@@ -22,24 +22,31 @@
         <a href="#info-section">Informācija</a>
         <a href="#download-section">Lejupielāde</a>
         <a href="#guide-section">Ceļvedis</a>
-
 <!--Theme Selector------------------------------->
-        <div id="theme-selector">
-            <button id="theme-drop-button">Izskati</button>
-            <div id="themes">
-                <a onclick="midnight()" id="midnightToggle">Pusnakts</a>
-                <a onclick="darkMode()" id="darkModeToggle">Tumšs</a>
-                <a onclick="lightMode()" id="lightModeToggle">Gaišs</a>
+        <div class="theme-selector">
+            <button class="theme-drop-button">Dropdown</button>
+            <div class="themes">
+                <button onclick="lightMode()" id="lightModeToggle" class="theme-list-button">Gaišs</button>
+                <button onclick="darkMode()" id="darkModeToggle" class="theme-list-button">Tumšs</button>
+                <button onclick="midnight()" id="midnightToggle" class="theme-list-button">Pusnakts</button>
             </div>
         </div>
     </nav>
    
-<!--Mobile Menu------------------------------->
+<!--Mobile Menu + Theme Selector------------------------------->
     <div class="mobile-menu" id="mobileMenu">
         <a href="#hero-section">Sākums</a>
         <a href="#info-section">Informācija</a>
         <a href="#download-section">Lejupielāde</a>
         <a href="#guide-section">Ceļvedis</a>
+        <div id="theme-selector">
+            <button id="theme-drop-button">Izskati</button>
+            <div id="themes">
+                <a href='#' onclick="lightMode()" id="lightModeToggle" class="one-theme">Gaišs</a>
+                <a href='#' onclick="darkMode()" id="darkModeToggle" class="one-theme">Tumšs</a>
+                <a href='#' onclick="midnight()" id="midnightToggle" class="one-theme">Pusnakts</a>
+            </div>
+        </div>
     </div>
     <div id="overlay"></div>
 
@@ -47,7 +54,6 @@
 
 <!--Main Part------------------------------->
 <main>
-
 <!--Hero Section------------------------------->
     <section id="hero-section">
         <div id="hero-text">
@@ -62,13 +68,13 @@
         <h1>Par sistēmu</h1>
         <p>Šī bankas sistēmas programma ir izstrādāta Java valodā kā konsoles lietotne ar dažādu bibliotēku un frameworku palīdzību. Tās mērķis ir attēlot pamata bankas funkcionalitāti izglītojošiem nolūkiem. Tajā var sataisīt lietotāju, un lietotājs, savukārt, var izveidot kontu, pieslēgties esošam kontam, veikt iemaksas, izmaksas, pārskaitīt naudu, apskatīt konta atlikumu un citas darbības.</p>
 <h3 style="margin-bottom: 0px;">Galvenās funkcijas:</h3>
-<ul>
-    <li>a) Lietotāja reģistrācija</li>
-    <li>b) Darbības ar digitālo naudu</li>
-    <li>c) Konta atlikuma pārbaude</li>
-    <li>d) Karšu (kredīta, debit un ISIC) izveidošana</li>
-    <li>e) Nodokļu un kredītu kalkulatori</li>
-</ul>
+<ol type="a">
+    <li>Lietotāja reģistrācija</li>
+    <li>Darbības ar digitālo naudu</li>
+    <li>Konta atlikuma pārbaude</li>
+    <li>Karšu (kredīta, debit un ISIC) izveidošana</li>
+    <li>Nodokļu un kredītu kalkulatori</li>
+</ol>
 <p> Šī sistēma nav paredzēta izmantot reāliem finansu nolūkiem bet gan kā mācību projekts, lai iepazīstinātu ar bankas bāzu funkcionalitāti un nodemonstrētu objektorientētās programmēšanas pamatus, failu apstrādi un lietotāja interfeisa izveidi konsolē.</p>
     </section>
 
