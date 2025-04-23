@@ -47,3 +47,21 @@ const resizeObserver = new ResizeObserver(() => {
 });
 
 resizeObserver.observe(header);
+
+
+
+
+function midnight() {
+  var element = document.body;
+  element.classList.toggle("midnight");
+}
+
+function darkMode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
+
+function lightMode() {
+  var element = document.body;
+  element.classList.toggle("light-mode");
+}

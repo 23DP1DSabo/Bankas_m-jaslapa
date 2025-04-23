@@ -18,7 +18,16 @@
         <a href="#info-section">Informācija</a>
         <a href="#download-section">Lejupielāde</a>
         <a href="#guide-section">Ceļvedis</a>
+        <div id="theme-selector">
+            <button id="theme-drop-button">Dark Mode</button>
+            <div id="themes">
+                <a onclick="midnight()" id="midnightToggle">Midnight</a>
+                <a onclick="darkMode()" id="darkModeToggle">Dark Mode</a>
+                <a onclick="lightMode()" id="lightModeToggle">Light Mode</a>
+            </div>
+        </div>
     </nav>
+   
     <div class="mobile-menu" id="mobileMenu">
         <a href="#hero-section">Sākums</a>
         <a href="#info-section">Informācija</a>
@@ -80,6 +89,5 @@ Pārliecinieties, ka jūsu datorā ir uzstādīta Java (versija 8 vai jaunāka).
 
 
 <script src="src/scripts/main.js"></script>
-
 </body>
 </html>

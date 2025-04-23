@@ -17,6 +17,60 @@ body {
 
 
 
+
+.midnight {
+    background-color: #000;
+    color: #fff;
+
+    .regular-section {
+        background: 
+        linear-gradient(
+            to right,
+            transparent 38px,
+            #000 38px,
+            transparent 41px
+        ),
+        repeating-linear-gradient(
+            to bottom,
+            #000 0px,
+            #000 23.5px,
+            #000 25px
+        );
+
+        border-top: #fff 5px solid;
+
+        border-radius: 50px;
+    }
+}
+
+.dark-mode {
+    background-color: #000;
+    color: #fff;
+
+    .regular-section {
+        background: 
+        linear-gradient(
+            to right,
+            transparent 38px,
+            #000 38px,
+            transparent 41px
+        ),
+        repeating-linear-gradient(
+            to bottom,
+            #000 0px,
+            #000 23.5px,
+            #000 25px
+        );
+
+        border-top: #fff 5px solid;
+
+        border-radius: 50px;
+    }
+}
+
+
+
+
 header {
     width: 100vw;
     display: flex;
@@ -42,7 +96,7 @@ header {
 
 .nav-bar {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 10px;
     background-color: #001170;
     padding-right: 30px;
@@ -114,6 +168,34 @@ a {
     justify-content: center;
 }
 
+#theme-drop-button {
+    height: auto;
+    padding: 10px 5px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid transparent; 
+    outline: none;
+    transition: all 0.2s;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-color: #001170; 
+    font-size: 25px;
+    font-family: Bahnschrift;
+}
+
+#theme-selector {
+    display: inline-block;
+}
+
+#themes {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
 a:hover {
     cursor: pointer;
     background-color: #0119a5;
@@ -121,7 +203,19 @@ a:hover {
     border-color: #fff;
 }
 
+#theme-drop-button:hover {
+    cursor: pointer;
+    background-color: #0119a5;
+    outline: 1px solid #fff; 
+    border-color: #fff;
+    display: block;
+}
+
 a:active {
+    padding: 8px 2.5px;
+}
+
+#theme-drop-button:active {
     padding: 8px 2.5px;
 }
 
