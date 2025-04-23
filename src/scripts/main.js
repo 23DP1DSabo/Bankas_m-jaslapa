@@ -59,7 +59,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
 function midnight() {
   var element = document.body;
   element.classList.toggle("midnight");
