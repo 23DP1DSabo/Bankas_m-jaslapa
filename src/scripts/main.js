@@ -62,17 +62,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Themes
 
-function midnight() {
-  var element = document.body;
-  element.classList.toggle("midnight");
+function lightMode() {
+  document.body.classList.remove("dark-mode", "midnight");
 }
 
 function darkMode() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
+  document.body.classList.remove("midnight");
+  document.body.classList.add("dark-mode");
 }
 
-function lightMode() {
-  var element = document.body;
-  element.classList.toggle("light-mode");
+function midnight() {
+  document.body.classList.remove("dark-mode");
+  document.body.classList.add("midnight");
 }

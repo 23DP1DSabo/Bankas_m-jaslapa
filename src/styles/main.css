@@ -20,85 +20,6 @@ body {
 
 
 
-/* -----THEMES---------------------------------------------------------- */
-
-.midnight {
-    background-color: #000;
-    color: #fff;
-
-    .regular-section {
-        background: 
-        linear-gradient(
-            to right,
-            transparent 38px,
-            #000 38px,
-            transparent 41px
-        ),
-        repeating-linear-gradient(
-            to bottom,
-            #000 0px,
-            #000 23.5px,
-            #000 25px
-        );
-
-        border-top: #fff 5px solid;
-
-        border-radius: 50px;
-    }
-}
-
-.dark-mode {
-    background-color: #000;
-    color: #fff;
-
-    .regular-section {
-        background: 
-        linear-gradient(
-            to right,
-            transparent 38px,
-            #000 38px,
-            transparent 41px
-        ),
-        repeating-linear-gradient(
-            to bottom,
-            #000 0px,
-            #000 23.5px,
-            #000 25px
-        );
-
-        border-top: #fff 5px solid;
-
-        border-radius: 50px;
-    }
-}
-
-.light-mode {
-    background-color: #000;
-    color: #fff;
-
-    .regular-section {
-        background: 
-        linear-gradient(
-            to right,
-            transparent 38px,
-            #000 38px,
-            transparent 41px
-        ),
-        repeating-linear-gradient(
-            to bottom,
-            #000 0px,
-            #000 23.5px,
-            #000 25px
-        );
-
-        border-top: #fff 5px solid;
-
-        border-radius: 50px;
-    }
-}
-
-
-
 /* -----HEADER---------------------------------------------------------- */
 
 header {
@@ -224,47 +145,64 @@ a:active {
 
 /* -----THEME BUTTON---------------------------------------------------------- */
 
-.theme-drop-button {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  }
-  
-  .theme-selector {
+.theme-selector {
     position: relative;
-    display: inline-block;
-  }
-  
-  .themes {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .themes a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .themes a:hover {background-color: #ddd;}
-  
-  .theme-selector:hover .themes {display: block;}
-  
-  .theme-selector:hover .theme-drop-button {background-color: #3e8e41;}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-  .one-theme {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
+.theme-drop-button {
+    background-color: #001170;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 10px 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+    width: 100%;
+}
+
+.theme-drop-button:hover {
+    background-color: #0119a5;
+    outline: 1px solid #fff;
+    border-color: #fff;
+}
+
+.themes {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: #001170;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1000;
+    outline: 2px solid #fff;
+}
+
+.theme-selector:hover .themes {
+    display: flex;
+}
+
+.theme-list-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px 5px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.2s;
+    border-top: 1px solid rgb(255, 255, 255);
+}
+
+.theme-list-button:hover {
+    background-color: #0119a5;
+}
+
 
 /* -----HERO SECTION---------------------------------------------------------- */
 
@@ -417,6 +355,10 @@ a:active {
     margin-top:5px;
 }
 
+#arrow {
+    font-size: 30px;
+    padding-left: 5px;
+}
 
 
 /* -----MOBILE MENU---------------------------------------------------------- */
@@ -580,4 +522,62 @@ a:active {
     }
 
 
-  }
+}
+
+
+
+  /* -----THEMES---------------------------------------------------------- */
+
+.midnight {
+    background-color: #000;
+    color: #fff;
+}
+
+.midnight .regular-section {
+    background: 
+    linear-gradient(
+        to right,
+        transparent 38px,
+        #000 38px,
+        transparent 41px
+    ),
+    repeating-linear-gradient(
+        to bottom,
+        #000 0px,
+        #000 23.5px,
+        #000 25px
+    );
+    
+        border-top: #fff 5px solid;
+        border-radius: 40px;
+    }
+
+
+
+.dark-mode {
+    background-color: #222222;
+    color: #fff;
+}
+
+.dark-mode .regular-section {
+    background: 
+    linear-gradient(
+        to right,
+        transparent 38px,
+        #303030 38px,
+        transparent 41px
+    ),
+    repeating-linear-gradient(
+        to bottom,
+        #303030 0px,
+        #303030 23.5px,
+        #303030 25px
+    );
+
+    border: #fff 2px solid;
+    border-bottom: #fff 2px solid;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+
