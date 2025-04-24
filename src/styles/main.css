@@ -572,7 +572,7 @@ a:active {
         margin-top: auto;
     }
     
-    #themes.show-dropdown() {
+    #themes.show-dropdown {
         display: flex;
     }
     

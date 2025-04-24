@@ -75,3 +75,15 @@ function midnight() {
   document.body.classList.remove("dark-mode");
   document.body.classList.add("midnight");
 }
+
+
+
+
+// Mobile Theme Dropdown Mneu
+
+const themeButton = document.getElementById('theme-drop-button');
+const themes = document.getElementById('themes');
+
+themeButton.addEventListener('click', function() {
+    themes.classList.toggle('show-dropdown');
+});
