@@ -10,17 +10,21 @@ toggleBtn.addEventListener("click", () => {
 });
 
 overlay.addEventListener("click", () => {
-  mobileMenu.classList.remove("active");
-  overlay.classList.remove("active");
+  closeMobileMenu();
 });
 
 const links = mobileMenu.querySelectorAll("a");
 links.forEach(link => {
   link.addEventListener("click", () => {
-    mobileMenu.classList.remove("active");
-    overlay.classList.remove("active");
+    closeMobileMenu();
   });
 });
+
+function closeMobileMenu() {
+  mobileMenu.classList.remove("active");
+  overlay.classList.remove("active");
+  themesDropdown.classList.remove("show-dropdown"); // ← CLOSE dropdown too
+}
 
 
 
@@ -78,12 +82,12 @@ function midnight() {
 
 
 
+// Themes menu on mobile
 
-// Mobile Theme Dropdown Mneu
+const themeDropButton = document.getElementById('theme-drop-button');
+const themesDropdown = document.getElementById('themes');
 
-const themeButton = document.getElementById('theme-drop-button');
-const themes = document.getElementById('themes');
-
-themeButton.addEventListener('click', function() {
-    themes.classList.toggle('show-dropdown');
+themeDropButton.addEventListener('click', (e) => {
+  e.stopPropagation();
+  themesDropdown.classList.toggle('show-dropdown'); 
 });

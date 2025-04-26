@@ -573,7 +573,7 @@ a:active {
     }
     
     #themes.show-dropdown {
-        display: flex;
+        display: block;
     }
     
     .theme-list-button {
@@ -624,7 +624,7 @@ a:active {
 .midnight #download-link {
     background-color: rgb(24, 197, 255);
     color: #000;
-}
+    }
 
 
 
