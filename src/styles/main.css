@@ -397,7 +397,7 @@ a:active {
 
 /* -----RESPONSIVITY (MOBILE)---------------------------------------------------------- */
 
-@media screen and (max-width: 768px) and (pointer:coarse) {
+@media screen and (max-width: 800px) and (pointer:coarse) {
     header {
         flex-direction: row-reverse;
         display: flex;
